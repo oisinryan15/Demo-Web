@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="Styles/index.css">
+
+    <script src="Scripts/darkMode.js" defer></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="contact.html">Get in Touch</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+    <!-- accessibility controls, styled inline insidetags -->
+    <div style="margin: 2em 0;">
+        <button id="darkModeBtn">Change Theme</button>
+        <label for="fontSlider" style="margin-left:2em;">Text Size:</label>
+        <input type="range" id="fontSlider" min="14" max="32" value="18" style="vertical-align:middle;">
+        <label for="fontSelect" style="margin-left:2em;">Font:</label>
+        <select id="fontSelect">
+            <!-- some universal fonts -->
+            <option value="Arial, sans-serif">Arial</option>
+            <option value="Georgia, serif">Georgia</option>
+            <option value="Tahoma, sans-serif">Tahoma</option>
+            <option value="Courier New, monospace">Courier New</option>
+        </select>
+    </div>
+    <!-- wrap main content in container class -->
+    <div class="container">
+        <h1>Welcome to My Blog</h1>
+        <p>Welcome to the home page! Use the navigation bar to visit different sections.</p>
+    </div>
+    <script src="darkMode.js"></script>
+</body>
+</html>
