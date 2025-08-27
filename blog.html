@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog Project</title>
+    <link rel="stylesheet" href="Styles/blog.css">
+    <script src="Scripts/blog.js" defer></script>
+    <script src="Scripts/darkMode.js" defer></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="access-controls">
+        <button id="darkModeBtn" style="padding: 0.5em 1em; font-size: 1em;">Change Theme</button>
+        <label for="fontSlider">Text Size:</label>
+        <input type="range" id="fontSlider" min="14" max="32" value="18">
+        <label for="fontSelect">Font:</label>
+        <select id="fontSelect">
+            <option value="Arial, sans-serif">Arial</option>
+            <option value="Georgia, serif">Georgia</option>
+            <option value="Tahoma, sans-serif">Tahoma</option>
+            <option value="Courier New, monospace">Courier New</option>
+        </select>
+    </div>
+    <div class="blog-container">
+        <h1>Welcome to the Blog</h1>
+        <!-- blog post form -->
+        <form>
+            <label for="blogpost">Post:</label>
+            <textarea id="blogpost" name="blogpost" placeholder="What's on your mind..."></textarea>
+            <button type="submit">Post</button>
+        </form>
+    </div>
+</body>
+</html>
